@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="sliding_form d-flex justify-content-center align-items-center">
+        <div class="form_section d-flex">
+            <div class="section d-flex flex-column align-items-center justify-content-center">
+                Already have an account?
+                <button class="sign_in" onclick="signin()">Sign in</button>
+            </div>
+            <div class="section d-flex flex-column align-items-center justify-content-center">
+                Don't have an account?
+                <button class="sign_up" onclick="signup()">Sign up</button>
+            </div>
+            <div class="main_form" id="main_form"> 
+                <div class="login_form">
+                    <ul>
+                        <li><label for="sin1">Name : </label><input type="text" id="sin1" value="" placeholder="enter name"></li>
+                        <li><label for="sin2">Age : </label><input type="text" id="sin2" value="" placeholder="enter age"></li>
+                        
+                        <li><input type="submit" id="sign_up_button" value="sign up"></li>
+                    </ul>
+                </div>
+                <div class="register_form">
+                    <ul>
+                        <li><label for="sin1">Name : </label><input type="text" id="sin1" value="" placeholder="enter name"></li>
+                        <li><label for="sin2">Age : </label><input type="text" id="sin2" value="" placeholder="enter age"></li>
+                        <li><label for="sin3">Email : </label><input type="text" id="sin3" value="" placeholder="enter e-mail"></li>
+                        <li><label for="sin4">Address : </label><input type="text" id="sin4" value="" placeholder="enter address"></li>
+                        <li><label for="sin5">password : </label><input type="password" id="sin5" value="" placeholder=""></li>
+                        <li><input type="submit" id="sign_up_button" value="sign up"></li>
+                    </ul>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+    
+</body>
+</html>

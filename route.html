@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS only -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>About us :: Care Point</title>
+</head>
+<body>
+
+<!-- header section -->
+
+    <header class="header">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="header_icon">
+                        <a href="#"><img id="header_icon" src="images/logo.png" alt=""></a>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <nav class="header_menu">
+                        <ul class="menu d-flex align-items-center">
+                            <li class="menu_item"><a href="index.html">home</a></li>
+                            <li class="menu_item"><a href="#">about us</a></li>
+                            <li class="menu_item"><a href="#">services</a></li>
+                            <li class="menu_item"><a href="#">contact us</a></li>
+                            <li class="menu_item"><a href="doctor.html">doctors</a></li>
+                            
+                        </ul>
+                    </nav>
+                    <div class="nav_icon">
+                      <img id="navicon" onclick="show_nav_menu()" src="images/menu.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <span class="nav_menu">
+              <div class="nav_menu_inner" id="nav_menu_inner">
+                <ul class="nav_menu_items">
+                  <div class="header_icon">
+                    <a href="#"><img id="header_icon" src="images/logo.png" alt=""></a>
+                  </div>
+                  <li class="nav_menu_item"><a id="sample" href="#">home</a></li>
+                  <li class="nav_menu_item"><a href="#">about us</a></li>
+                  <li class="nav_menu_item"><a href="#">services</a></li>
+                  <li class="nav_menu_item"><a href="#">contact us</a></li>
+                  <li class="nav_menu_item"><a href="#">doctors</a></li>
+                </ul>
+              </div>
+            </span>
+        </div>
+    </header>
+
+    <div id="floating_pannel">
+        <div>
+            <div>
+                <input type="text" id="from" placeholder="Origin">
+            </div>
+        </div>
+        <div>
+            <div>
+                <input type="text" id="to" placeholder="destination">
+            </div>
+        </div>
+        <b>mode of travel</b>
+        <select id="mode">
+            <option value="DRIVING">driving</option>
+            <option value="WALKING">walking</option>
+            <option value="BICYCLING">bicycling</option>
+            <option value="TRANSIT">transit</option>
+        </select>
+    </div>
+    
+
+    <div id="map" style="height: 400px;"></div>
+
+
+<!-- footer part -->
+
+
+
+</body>
+<!-- JavaScript Bundle with Popper -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCk9wppjay8BXHs9EqVy0bTZopnZydDztM&callback=initMap&libraries=&v=weekly"></script>
+    <script src="js/app.js"></script>
+    <script src="js/custom_map.js"></script>
+</html>

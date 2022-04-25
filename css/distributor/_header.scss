@@ -1,0 +1,112 @@
+.header{
+    width: 100%; padding: 10px 0;
+    background-image: linear-gradient(90deg, #451b72 40%, transparent 40%);
+    .header_icon{
+        img{
+            width: 150px;
+        }
+    }
+    .header_menu{
+        width: 100%;
+        .menu{
+            justify-content: space-between;
+            padding: 10px 0;
+            li{
+                font-family: 'Open Sans', sans-serif;
+                text-transform: uppercase;
+                font-size: 18px;
+                font-weight: 500;
+                a{
+                    color: #451B72;
+                    font-weight: 600;
+                }
+            }
+        }
+    }
+    .nav_icon{
+        display: none;
+        text-align: right;
+        img{
+            height: 30px;
+            position: relative;
+            z-index: 99;
+        }
+    }
+    .nav_menu{
+        position: relative;
+        .nav_menu_inner{
+            position: fixed;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            z-index: 12;
+            transition: all 0.3s ease-in-out;
+            .nav_menu_items{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                height: 100%;
+                text-align: center;
+                background-image: linear-gradient(to right top, #451b72, #6e5397, #9a8abb, #cac4de, #ffffff);
+                z-index: 12;
+                opacity: 0.8;
+                position: relative;
+                li{
+                    padding: 15px 0;
+                    display: inline-block;
+                    width: 100%;
+                    transition: all 0.5s ease-in-out;
+                    a{
+                        font-size: 20px;
+                        color: #fff;
+                        text-transform: uppercase;
+                        font-weight: 500;
+                        text-shadow: 0 0 3px #ebcaca, 0 0 5px #040404;
+                    }
+                    &:hover{
+                        background-image: linear-gradient(45deg,transparent, #e940e3 49%, transparent);
+                    }
+                }
+            }
+        }
+        .nav_menu_inner_active{
+            left: 0;
+        }
+    }
+}
+
+@media only screen and (max-width:1366px){
+    .header{
+        .header_icon{
+            img{
+                width: 100px;
+            }
+        }
+        .header_menu{
+            .menu{
+                .menu_item{
+                    font-size: 15px;
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width:991px){
+    .header{
+        .header_menu{
+            display: none;
+        }
+        .nav_icon{
+            display: block;
+        }
+    }
+}
+@media only screen and (max-width:767px){
+    .header{
+        .col-md-6{
+            width: 50%;
+        }
+    }
+}

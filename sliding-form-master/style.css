@@ -1,0 +1,83 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.d-flex{
+    display: flex;
+}
+.justify-content-center{
+    justify-content: center;
+}
+.flex-column{
+    flex-direction: column;
+}
+.align-items-center{
+    align-items: center;
+}
+.sliding_form{
+    background-color:aqua;
+    width: 100%;
+    height: 100vh;
+}
+.form_section{
+    max-width: 800px;
+    width: 100%;
+    position: relative;
+}
+.form_section .section{
+    height: 500px;
+    width: 100%;
+    background-color: bisque;
+}
+
+.form_section .section button{
+    background-color: #000;
+    color: #fff;
+    border: none;
+    outline-style: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-top: 30px;
+}
+
+.form_section .main_form{
+    width: 50%;
+    height: 600px;
+    background-color:aquamarine;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    left: 0;
+    padding: 40px;
+    transition: all .5s ease-in-out;
+}
+
+.login_form, .register_form{
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 0;
+    z-index: 99;
+
+}
+
+.register_form{
+    opacity: 0;
+    visibility: hidden;
+    transition: all .5s ease-in-out;
+    background-color: red;
+}
+.form_section .main_form.shift{
+    transform: translateX(100%);
+}
+.form_section .main_form.shift .register_form{
+    opacity: 1;
+    visibility: visible;
+}
+.form_section .main_form.shift .login_form{
+    opacity: 0;
+    visibility: hidden;
+}

@@ -1,0 +1,51 @@
+.inner_banner{
+    position: relative;
+        img{
+            width: 100%;
+            max-height: 350px;
+            object-fit: cover;
+        }
+    .inner_banner_content{
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        .inner_banner_heading{
+            text-align: center;
+            font-size: 45px;
+            text-transform: uppercase;
+            color: #fff;
+        }
+    }
+}
+.about_us_content{
+    margin:85px 0 50px 0;
+    img{
+        width: 100%;
+    }
+    .about_us_details{
+        padding-left: 50px;
+        h6{
+            font-size: 30px;
+            color: #451B72;
+            margin-bottom: 20px;
+        }
+        p{
+            color: #451B72;
+            margin-bottom: 20px;
+        }
+        p{
+            color: #451B72;
+            margin-bottom: 20px;
+        }
+        .main_btn{
+            margin:0 auto 0 0;
+            color: #451b72;
+            border: 1px solid #451b72;
+        }
+    }
+}
